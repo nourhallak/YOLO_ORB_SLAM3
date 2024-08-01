@@ -33,7 +33,7 @@ tar -xf ORBvoc.txt.tar.gz
 cd ..
 
 echo "Configuring and building YOLO_ORB_SLAM3 ..."
-
+cmake -DCMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH} ..
 mkdir build
 cd build
 cmake .. -DCMAKE_BUILD_TYPE=Release
